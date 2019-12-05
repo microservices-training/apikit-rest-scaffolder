@@ -10,7 +10,7 @@ import com.google.common.collect.Lists;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.Validate;
 
-import org.mule.module.apikit.helpers.FlowName;
+import org.mule.tools.apikit.helpers.FlowName;
 import org.mule.apikit.model.Action;
 import org.mule.apikit.model.Resource;
 import org.mule.apikit.model.Response;
@@ -28,8 +28,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static java.util.stream.Collectors.toMap;
-import static org.mule.module.apikit.helpers.AttributesHelper.getMediaType;
-import static org.mule.module.apikit.helpers.FlowName.FLOW_NAME_SEPARATOR;
+import static org.mule.tools.apikit.helpers.AttributesHelper.getMediaType;
+import static org.mule.tools.apikit.helpers.FlowName.FLOW_NAME_SEPARATOR;
 import static org.mule.runtime.api.metadata.MediaType.parse;
 
 public class GenerationModel implements Comparable<GenerationModel> {
